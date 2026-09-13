@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Book Library</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Mini Book Library</h1>
+
+        <!-- Add Book -->
+        <div class="add-book">
+
+            <h2>Add New Book</h2>
+
+            <form id="bookForm">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Book Title"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="author"
+                    placeholder="Author Name"
+                    required
+                >
+
+                <button type="submit">
+                    Add Book
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+
+
+        <!-- Books -->
+        <div class="books-section">
+
+            <h2>All Books</h2>
+
+            <div id="booksContainer">
+                Loading books...
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

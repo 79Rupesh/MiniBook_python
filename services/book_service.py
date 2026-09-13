@@ -1,7 +1,8 @@
 from repositories.book_repository import(
 
     get_all_books,
-    create_book
+    create_book,
+    delete_book
 )
 
 def getbooks():
@@ -21,3 +22,6 @@ def add_book(title:str,author:str):
         title,
         author
     )
+
+def remove_book(book_id : int):
+    return delete_book(book_id)
